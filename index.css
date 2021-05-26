@@ -1,14 +1,14 @@
 body {
 }
 header {
-  height: 12ex;
+  height: 12vw;
 }
 nav {
-  width: 50em;
+  width: 35vw;
 }
 
 #NavHeader {
-  height: 30vw;
+  height: 20vw;
 }
 #NavMessage {
   color: hsl(0, 0%, 0%);
