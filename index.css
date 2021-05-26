@@ -8,7 +8,7 @@ nav {
 }
 
 #NavHeader {
-  height: 30em;
+  height: 30vw;
 }
 #NavMessage {
   color: hsl(0, 0%, 0%);
