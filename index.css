@@ -1,26 +1,59 @@
-body {
-}
+
 header {
   height: 12vw;
 }
 nav {
-  width: 35vw;
+  width: 10vw;
 }
+
+#myPic{
+  border-radius: 3vw;
+  size: 1vw;
+  padding: 1vw;
+}
+#bailandoJesus
+{
+  
+  height: 5vw; 
+  width: 5vw;
+}
+
+.flex-container
+{
+
+
+  display: flex;
+
+flex-direction: column;
+}
+
+.underDevelopment {
+  /* text-align: center; */
+  /* background: #1abc9c; */
+  color: rgb(229, 231, 209);
+  font-size: 15vw;
+padding: 3vw;
+}
+
 
 #NavHeader {
   height: 20vw;
 }
 #NavMessage {
-  color: hsl(0, 0%, 0%);
+font-size: 5vw;  color: hsl(0, 0%, 0%);
   text-shadow: 1px 1px hsl(0, 0%, 100%), 2px 2px hsl(0, 0%, 100%),
     3px 3px hsl(0, 0%, 100%), 4px 4px hsl(0, 0%, 100%);
 }
 
-@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+/* @import url(https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600); */
 
 html,
 body {
   height: 100%;
+  background-color: rgb(19, 19, 20);
+  
 }
 body {
   display: flex;
@@ -28,54 +61,65 @@ body {
   align-items: center;
   margin: 20px 0;
   text-align: center;
-  background: rgb(0, 0, 0);
+  background-size: cover;
   overflow: hidden;
 }
 
+
 h1 {
-  font-size: 30em;
-  font: bold 7.5vw/1.6 "Signika", sans-serif;
+  font-family: 'Caveat', cursive;
+    font: bold 10vw/15.6; 
+  font-size: 5vw;
+  
   user-select: none;
+
 }
 
 h1 span {
   display: inline-block;
-  animation: float 1s ease-in-out infinite;
+  animation: nametransition 2.05s  ;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 1px 1px hsl(0, 0%, 100%), 2px 2px hsl(0, 0%, 0%);
+  animation-fill-mode: forwards;
+
 }
-@keyframes float {
-  0%,
-  100% {
-    transform: none;
+@keyframes nametransition {
+  from {
+    color: hsl(0, 0%, 100%);
   }
-  33% {
-    transform: translateY(-1px) rotate(-2deg);
+  to {
+    color: rgb(238, 252, 119);
   }
-  66% {
-    transform: translateY(1px) rotate(2deg);
-  }
+
+
+
 }
-body:hover span {
-  animation: bounce 0.6s;
+
+h1 span :hover   {
+  animation: bounce 1s;
 }
-@keyframes bounce {
+
+
+ @keyframes bounce {
   0%,
   100% {
     transform: translate(0);
+
   }
   25% {
     transform: rotateX(20deg) translateY(2px) rotate(-3deg);
+
   }
   50% {
     transform: translateY(-20px) rotate(3deg) scale(1.1);
-  }
-}
 
-span:nth-child(4n) {
-  color: hsl(0, 0%, 0%);
-  text-shadow: 1px 1px hsl(50, 75%, 45%), 2px 2px hsl(50, 45%, 45%),
-    3px 3px hsl(50, 45%, 45%), 4px 4px hsl(50, 75%, 45%);
-}
-span:nth-child(4n-1) {
+  }
+} 
+/* span:nth-child(n) {
+  color: hsl(0, 0%, 100%);
+  text-shadow: 1px 1px hsl(0, 0%, 100%), 2px 2px hsl(0, 0%, 0%);
+} */
+/* span:nth-child(4n-1) {
   color: hsl(0, 0%, 0%);
   text-shadow: 1px 1px hsl(135, 35%, 45%), 2px 2px hsl(135, 35%, 45%),
     3px 3px hsl(135, 35%, 45%), 4px 4px hsl(135, 35%, 45%);
@@ -89,14 +133,83 @@ span:nth-child(4n-3) {
   color: hsl(0, 0%, 3%);
   text-shadow: 1px 1px hsl(30, 45%, 50%), 2px 2px hsl(30, 45%, 50%),
     3px 3px hsl(30, 45%, 50%), 4px 4px hsl(30, 45%, 50%);
-}
+} */
 
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+  }
 h1 span:nth-child(2) {
-  animation-delay: 0.05s;
-}
+    animation-delay: 0.55s;
+  }
+  h1 span:nth-child(3) {
+    animation-delay: 1.05s;
+  }
+  h1 span:nth-child(4) {
+    animation-delay: 1.55s;
+  }
+  h1 span:nth-child(5) {
+    animation-delay: 2.05s;
+  }
+  h1 span:nth-child(6) {
+    animation-delay: 2.55s;
+  }
+  h1 span:nth-child(7) {
+    animation-delay: 3.05s;
+  }
+  h1 span:nth-child(8) {
+    animation-delay: 3.55s;
+  }
+  h1 span:nth-child(9) {
+    animation-delay: 4.05s;
+  }
+  h1 span:nth-child(10) {
+    animation-delay: 4.55s;
+  }
+
+  h1 span:nth-child(11) {
+    animation-delay: 5.05s;
+  }
+
+  h1 span:nth-child(12) {
+    animation-delay: 5.55s;
+  }
+
+  h1 span:nth-child(13) {
+    animation-delay: 6.05s;
+  }
+
+  h1 span:nth-child(14) {
+    animation-delay: 6.55s;
+  }
+
+
+
+/* 
 h1 span:nth-child(3) {
   animation-delay: 0.6s;
 }
 h1 span:nth-child(4) {
   animation-delay: 0.12s;
+} */
+
+
+.track {
+  stroke: #ccc;
 }
+
+.marker {
+  motion-path: path('M 5 5 m -4, 0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0');
+  offset-path: path('M 5 5 m -4, 0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0');
+  animation: move 3s linear infinite;
+}
+
+@keyframes move {
+  100% { 
+    motion-offset: 100%;
+    offset-distance: 100%;
+  }
+}
+
+
+
+
